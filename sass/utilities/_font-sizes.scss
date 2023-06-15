@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+@each $screen-size, $size-map in $font-sizes {
+  @each $size-name, $size-value in $size-map {
+    @if $screen-size == small {
+      .fs-#{$size-name} {
+        font-size: var(--fs-#{$size-name});
+      }
+    }
+  }
+}

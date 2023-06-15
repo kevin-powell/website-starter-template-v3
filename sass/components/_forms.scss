@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.contact-form {
+  .form-group {
+    display: grid;
+  }
+}
+label {
+  color: $form-label-color;
+  font-family: $form-label-font-family;
+  font-weight: $form-label-font-weight;
+  font-size: $form-label-font-size;
+}
+
+input:not(.button) {
+  font-size: $form-input-font-size;
+  font-weight: $form-input-font-weight;
+  color: $form-input-color;
+  background-color: $form-input-background-color;
+  padding: $form-input-padding;
+  border: $form-input-border-default;
+  border-radius: $form-input-border-radius;
+}
+
+::placeholder {
+  color: $form-placeholder-color;
+  font-weight: $form-placeholder-font-weight;
+  font-family: $form-placeholder-font-family;
+}

@@ -1,0 +1,44 @@
+$-ff-sans: system-ui, sans-serif;
+$-ff-serif: serif;
+
+$font-family-base: $-ff-sans;
+$font-family-accent: $-ff-sans;
+
+$font-sizes: (
+  "small": (
+    "900": 3.75rem,
+    "800": 2.25rem,
+    "700": 1.75rem,
+    "600": 1.125rem,
+    "500": 1.125rem,
+    "400": 1rem,
+    "300": 0.925rem,
+    "200": 0.875rem,
+  ),
+  "large": (
+    "900": 3.75rem,
+    "800": 3rem,
+    "700": 1.75rem,
+    "600": 1.3125rem,
+    "500": 1.125rem,
+    "400": 1rem,
+    "300": 0.925rem,
+    "200": 0.875rem,
+  ),
+);
+
+$font-size-300: var(--fs-300);
+$font-size-400: var(--fs-400);
+$font-size-500: var(--fs-500);
+$font-size-600: var(--fs-600);
+$font-size-700: var(--fs-700);
+$font-size-800: var(--fs-800);
+$font-size-900: var(--fs-900);
+
+$-fw-400: 400;
+$-fw-500: 500;
+$-fw-700: 700;
+
+$font-weight-default: $-fw-400;
+$font-weight-semi-bold: $-fw-500;
+$font-weight-bold: $-fw-700;

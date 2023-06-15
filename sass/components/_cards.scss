@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.card {
+  display: grid;
+  gap: $card-flow-spacing;
+  padding: $card-body-padding;
+  background-color: $card-background-default;
+  font-family: $card-font-family;
+  color: $card-color-default;
+  line-height: $card-line-height;
+  box-shadow: $card-shadow;
+  border-radius: $card-border-radius;
+
+  &__heading {
+    @include heading($card-heading-font-size, $card-heading-color-default);
+  }
+}
