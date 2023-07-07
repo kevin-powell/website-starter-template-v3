@@ -3,9 +3,11 @@
 .nav {
   --flex-column-gap: #{$navigation-gap};
   list-style: none;
+  font-family: $navigation-font-family;
+  font-weight: $navigation-font-weight;
 
   a {
-    @include heading($navigation-font-size, $navigation-color);
+    color: $navigation-color;
     text-decoration: $navigation-link-text-decoration;
 
     &:is(:hover, :focus) {
