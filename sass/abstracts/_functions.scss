@@ -3,9 +3,20 @@
 @use "typography" as *;
 @use "sizes" as *;
 
-@function clr($color, $shade) {
-  @if map.has-key($colors, $color, $shade) {
-    @return map.get($colors, $color, $shade);
+@function clr($color, $shade, $scheme: $active-theme) {
+  $map: null;
+  @if $scheme == "light" {
+    $map: $light;
+  } @else if $scheme == "dark" {
+    $map: $dark;
+  } @else if $scheme == $active-theme {
+    $map: $active-theme;
+  } @else {
+    @error "unknown scheme";
+  }
+
+  @if map.has-key($map, $color, $shade) {
+    @return map.get($map, $color, $shade);
   } @else {
     @error '$colors does not have that color!';
   }
