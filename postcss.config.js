@@ -1,7 +1,11 @@
-const postcssPresetEnv = require("postcss-preset-env");
+import postcssPresetEnv from "postcss-preset-env";
+import { purgeCSSPlugin } from "@fullhuman/postcss-purgecss";
 
-module.exports = {
+export default {
   plugins: [
+    purgeCSSPlugin({
+      content: ["./**/*.html"],
+    }),
     postcssPresetEnv({
       stage: 0,
     }),
